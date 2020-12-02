@@ -1,17 +1,7 @@
 FROM klakegg/hugo:0.79.0
 
-RUN mkdir /app
+COPY content/ app/content/
 
-WORKDIR /app
+COPY packages/ app/
 
-COPY ./tdub /app
-
-
-
-
-
-
-
-
-
-
+WORKDIR app/
