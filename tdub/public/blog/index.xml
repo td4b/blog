@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Blogs on TwestDev</title>
+    <link>https://twestdev.com/blog/</link>
+    <description>Recent content in Blogs on TwestDev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>edwin.twest@gmail.com (Thomas E. West)</managingEditor>
+    <webMaster>edwin.twest@gmail.com (Thomas E. West)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://twestdev.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>DNS Hijacking and SubDomain Takeover.</title>
+        <link>https://twestdev.com/blog/2020-03-09-dnshijacking/</link>
+        <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+        <author>edwin.twest@gmail.com (Thomas E. West)</author>
+        <atom:modified>Mon, 09 Mar 2020 00:00:00 +0000</atom:modified>
+        <guid>https://twestdev.com/blog/2020-03-09-dnshijacking/</guid>
+        <description>DNS Hijacking a Cloud Provider. Little is discussed around the nature of DNS hijacking and methods to protect and prevent against these types of attacks. While they are somewhat uncommon they are possible in certain circumstances.
+DNS Hijacking can occur in several ways inside a cloud provider environment we will discuss both techniques but take a deeper dive in the DNS based approach.
+ Hijacking a Subdomain allocated to an Elastic IP address that has been released but not deallocated or dereferenced from DNS.</description>
+        
+        <dc:creator>Thomas E. West</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Using confd to bootstrap docker files.</title>
+        <link>https://twestdev.com/blog/2019-05-12-confd/</link>
+        <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+        <author>edwin.twest@gmail.com (Thomas E. West)</author>
+        <atom:modified>Sun, 12 May 2019 00:00:00 +0000</atom:modified>
+        <guid>https://twestdev.com/blog/2019-05-12-confd/</guid>
+        <description>Using confd to bootstrap docker files. I have actually seen very little documentation or blog posts about the use of confd. Being able to spin up immutable infrastructure at it&amp;rsquo;s core requires the ability to automate the configuration process on the running container filesystem as well as the host os.To be honest I am new myself to confd, and as I worked on building new security tools, I realized the need for an additional layer of boostraping functions where userdata alone would not cut it.</description>
+        
+        <dc:creator>Thomas E. West</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Kubernettes pt. 2</title>
+        <link>https://twestdev.com/blog/2018-09-19-kubernettesnetworkint/</link>
+        <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+        <author>edwin.twest@gmail.com (Thomas E. West)</author>
+        <atom:modified>Wed, 19 Sep 2018 00:00:00 +0000</atom:modified>
+        <guid>https://twestdev.com/blog/2018-09-19-kubernettesnetworkint/</guid>
+        <description>Kubernettes Simple Web app. After brining the cluster up I wanted to experiment with capturing some traffic on the Container level.
+Logging into my node, I deployed and configured my first simple container app (Flask Python Web App).
+In order to determine the attached network interface I needed to find the POD docker ID.
+From the controller -&amp;gt;
+1  kubectl get pod flask-app-6c4c95fddd-nl95g -o json   Then I parsed the Json and found the containerID.</description>
+        
+        <dc:creator>Thomas E. West</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Kubernettes Remote Procedure Calls.</title>
+        <link>https://twestdev.com/blog/2018-09-19-kubernettesrpc/</link>
+        <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+        <author>edwin.twest@gmail.com (Thomas E. West)</author>
+        <atom:modified>Wed, 19 Sep 2018 00:00:00 +0000</atom:modified>
+        <guid>https://twestdev.com/blog/2018-09-19-kubernettesrpc/</guid>
+        <description>Remote Procedure Calls. To install software on a running docker container if you gain access to the controller, you can make remote procedure calls to the system.
+For example, if I need to install curl.
+1  kubectl exec -it --namespace=default flask-app-6c4c95fddd-h7pgv -- bash -c &amp;#34;apt-get update;apt-get -y install curl; curl https://www.google.com &amp;gt;&amp;gt; hello.txt&amp;#34;   Thats it! Pretty Simple! Will be updating this post soon with info on why were interested in this!</description>
+        
+        <dc:creator>Thomas E. West</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Intro to Kubernettes.</title>
+        <link>https://twestdev.com/blog/2018-09-15-kubernettesint/</link>
+        <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
+        <author>edwin.twest@gmail.com (Thomas E. West)</author>
+        <atom:modified>Sat, 15 Sep 2018 00:00:00 +0000</atom:modified>
+        <guid>https://twestdev.com/blog/2018-09-15-kubernettesint/</guid>
+        <description>Kubernettes Pt 1. Pre-reqs.
+ Make sure to set up a static IP. Disable VM Swap space.  1  swapoff -a   !! Comment out swap space !!
+1  nano /etc/fstab   Installation on Master &amp;amp; Slave.
+Use Ansible to Automate the Dependency &amp;amp; Configuration process.
+https://github.com/kubernetes-incubator/kubespray
+Single node to test.
+1 2  declare -a IPS=(192.168.1.216) CONFIG_FILE=inventory/mycluster/hosts.ini python3 contrib/inventory_builder/inventory.py ${IPS[@]}   Playbook execution (This will just install the master node, use extra verbosity to troubleshoot errors!</description>
+        
+        <dc:creator>Thomas E. West</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>HTTP New Decoding Methods.</title>
+        <link>https://twestdev.com/blog/2018-09-01-httpdecode/</link>
+        <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+        <author>edwin.twest@gmail.com (Thomas E. West)</author>
+        <atom:modified>Sat, 01 Sep 2018 00:00:00 +0000</atom:modified>
+        <guid>https://twestdev.com/blog/2018-09-01-httpdecode/</guid>
+        <description>HTTP New Decoding Methods. As mentioned in the previous post. We need to be able to filter out the TCP streams from our HTTP streams, and then implement a more efficient way to decode the packet data.
+We need to filter the TCP data by flagging our TCP options.
+Since data is being pushed through the TCP stream, we need to filter by the packet flags (TCP options) as they are set.</description>
+        
+        <dc:creator>Thomas E. West</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>GoPacket Analysis Pt. 1</title>
+        <link>https://twestdev.com/blog/2018-08-25-gopacketanalysispt1/</link>
+        <pubDate>Sat, 25 Aug 2018 00:00:00 +0000</pubDate>
+        <author>edwin.twest@gmail.com (Thomas E. West)</author>
+        <atom:modified>Sat, 25 Aug 2018 00:00:00 +0000</atom:modified>
+        <guid>https://twestdev.com/blog/2018-08-25-gopacketanalysispt1/</guid>
+        <description>GoPacket Setup and Initial Analysis! Today we will focus on some packet analysis using Golang as our inspection engine.
+One of my side-project goals is to be able to build a packet analysis tool and Malware/Attack detection engine. I figured that Building this POC in GoLang would be the best choice from a performance &amp;amp; speed perspective.
+One of the issues I had with getting the Google pcap library to work was an issue with getting the &amp;ldquo;C&amp;rdquo; library interfaces from working properly.</description>
+        
+        <dc:creator>Thomas E. West</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Kioptrix Level 2</title>
+        <link>https://twestdev.com/blog/2018-08-12-kioptrixlvl2/</link>
+        <pubDate>Sun, 12 Aug 2018 00:00:00 +0000</pubDate>
+        <author>edwin.twest@gmail.com (Thomas E. West)</author>
+        <atom:modified>Sun, 12 Aug 2018 00:00:00 +0000</atom:modified>
+        <guid>https://twestdev.com/blog/2018-08-12-kioptrixlvl2/</guid>
+        <description>Kioptrix Level 2 Just a short walkthrough on Kioptrix level 2.
+Step 1: enumeration &amp;amp; information Gathering.Portscan results:
+PORT STATE SERVICE REASON22/tcp open ssh syn-ack ttl 6480/tcp open http syn-ack ttl 64111/tcp open rpcbind syn-ack ttl 64443/tcp open https syn-ack ttl 64631/tcp open ipp syn-ack ttl 64812/tcp open unknown syn-ack ttl 643306/tcp open mysql syn-ack ttl 64Inspecting the Web Server reveals a login page to the administrative console.</description>
+        
+        <dc:creator>Thomas E. West</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Fibbonacci Sequence Calculator.</title>
+        <link>https://twestdev.com/blog/2018-05-04-fibextension/</link>
+        <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
+        <author>edwin.twest@gmail.com (Thomas E. West)</author>
+        <atom:modified>Fri, 04 May 2018 00:00:00 +0000</atom:modified>
+        <guid>https://twestdev.com/blog/2018-05-04-fibextension/</guid>
+        <description>FibExtensionModule Writing C++ extension modules with SWIG for Python has never been so easy&amp;hellip;
+For this module, the C++ code was compiled with Mingw64 (i686-w64-mingw32-g++)
+The first step is installing Mingw64 and SWIG after doing so the Mingw /bin/ files (.exe) and the SWIG (.exe) files should be set to your environment variables so they can be called from the command line.
+First step is to actually write and debug the C++ function you want to interface with Python.</description>
+        
+        <dc:creator>Thomas E. West</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

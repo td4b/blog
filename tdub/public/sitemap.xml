@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://twestdev.com/blog/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twestdev.com/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twestdev.com/blog/2020-03-09-dnshijacking/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twestdev.com/blog/2019-05-12-confd/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twestdev.com/blog/2018-09-19-kubernettesnetworkint/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twestdev.com/blog/2018-09-19-kubernettesrpc/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twestdev.com/blog/2018-09-15-kubernettesint/</loc>
+    <lastmod>2018-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twestdev.com/blog/2018-09-01-httpdecode/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twestdev.com/blog/2018-08-25-gopacketanalysispt1/</loc>
+    <lastmod>2018-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twestdev.com/blog/2018-08-12-kioptrixlvl2/</loc>
+    <lastmod>2018-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twestdev.com/blog/2018-05-04-fibextension/</loc>
+    <lastmod>2018-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://twestdev.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://twestdev.com/series/</loc>
+  </url>
+  
+  <url>
+    <loc>https://twestdev.com/tags/</loc>
+  </url>
+  
+</urlset>
